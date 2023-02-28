@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#236185 ;
+    color: #7d7deb;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #578cdb;
+    color: #7878d6;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #00ccaa;
+}
+.aside {
+    background-color:  #a1846b;
+    color: #008006;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color:#55aed1 ;
+    color: #e7e7e7;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+body {
+    background-repeat: no-repeat;
+    background-image: url("");
+}
+
+
+    @media only screen and (min-width: 768px) {
+  .imagen {
+    content: url(anko.jpg);
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color: rgb(255, 255, 255); font-family: fantasy; font-size: 50px; text-align: center;">Practica 9 - Amy Crecencio</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://amayrani-crecencio.github.io/Practica1/">Practica 1</a></li>
+    <li><a href="https://amayrani-crecencio.github.io/PRACTICA_2/">Practica 2</a></li>
+    <li><a href="https://amayrani-crecencio.github.io/Practica3/">Practica 3</a></li>
+    <li><a href="https://amayrani-crecencio.github.io/Practica-4/">Practica 4</a></li>
+    <li><a href="https://amayrani-crecencio.github.io/prac5/">Practica 5</a></li>
+    <li><a href="https://amayrani-crecencio.github.io/pract6/">Practica 6</a></li>
+    <li><a href="https://amayrani-crecencio.github.io/practica7/">Practica 7</a></li>
+    
+  </ul>
+</div>
+
+<div class="col-6">
+  <h1 style="color: black; font-family: cursive; font-size: 40px; text-align: center;">CV</h1>
+  <video src="amaCT.mp4" controls width="320px" height="240px">
+ </video> 
+ <h2 style=" font-family:  Arial,Helvetica, sans-serif;">Dirreci&oacute;n</h2>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3945.3214528345316!2d-97.11589102216745!3d18.857479484696093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1676940372248!5m2!1ses-419!2smx" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br><br>
+
+  <form style= "background-color: rgba(151, 208, 231, 0.507)">
+    <fieldset  >
+<legend style= "color: black"><h2>Datos personales</h2> </legend>
+
+<form action="" method="get">               
+<p>
+    <ul style="list-style-type:square">
+        <li>Nombre completo: Amayrani Crecencio Teodoro</li>
+        <li>Fecha de nacimiento: 06 de Septiembre de 2001</li>
+        <li>Lugar de nacimiento: Rio Blanco, Veracruz</li>
+        </ul><br></p>
+
+<h2>Formaci&oacute;n acad&eacute;mica</h2>
+<p>
+    <ul style="list-style-type:square">
+      <li>2014 - 2017: Tecnica 98</li>
+      <li>2017 - 2020: Conalep</li>
+      <li>2020 - 2024: Instituto Tecnologico</li>
+        </ul>
+<br></p>
+
+<h2>Experiencia laboral</h2> <p>
+    <ul style="list-style-type:square">
+      <li>2018 - 2019: Capturación de datos automovilisticos</li>
+      <li>2019 - 2022: Acceso a inventarios de ferreteria</li>
+    </ul>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    <img src="anko.jpg" class="imagen"  width="300px" height="300px">
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Autora: Amayrani Crecencio Teodoro</p>
+</div>
+
+</body>
+</html>
